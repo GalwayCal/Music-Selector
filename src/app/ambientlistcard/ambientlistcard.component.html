@@ -1,0 +1,19 @@
+    <mat-card>
+        <img mat-card-image img src="{{ amvList.ambientImage }}" >
+        <mat-card-title>{{ amvList.ambientName }}</mat-card-title>
+        <mat-card-content>
+          <p>
+            {{ amvList.ambientDescription }}
+          </p>
+        </mat-card-content>
+        <mat-divider></mat-divider>
+        <mat-card-footer>
+            <div class="footer-card">
+                    <a href="{{ amvList.ambientSample }}" target="_blank">
+                <button mat-icon-button aria-label="YouTube fontIcon">
+                    <mat-icon fontSet="fontawesome" fontIcon="fa-play"></mat-icon>
+                </button>
+                </a>
+            </div>
+        </mat-card-footer>
+      </mat-card>

@@ -1,0 +1,83 @@
+.menu {
+    background: #283746;
+    height: 100vh;
+    width: 280px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    outline: none;
+  }
+  .menu .logo {
+    background: rgba(0, 0, 0, 0.1);
+    padding: 2em 0.5em;
+    text-align: center;
+  }
+  .menu .logo img {
+    width: 100px;
+    border-radius: 50%;
+    overflow: hidden;
+
+  }
+
+.menu-controls{
+margin-left: 15px;
+
+}
+  .mat-tab-label {
+    height: 48px;
+    padding: 0 24px;
+    cursor: pointer;
+    box-sizing: border-box;
+    opacity: .6;
+    min-width: 60px!important;
+    text-align: center;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    white-space: nowrap;
+    position: relative;
+  }
+  mat-slider {
+    width: 230px;
+  }
+  .mat-accent .mat-slider-thumb, .mat-accent .mat-slider-thumb-label, .mat-accent .mat-slider-track-fill {
+    background-color: #32be78;
+}
+  
+.category-button {
+  color: #ffffff;
+  padding: 0 6px 0 6px;
+  margin: 3px 3px 3px 0px;
+}
+
+
+.reset {
+  position: absolute;
+  bottom: 65px;
+  width: 100%;
+}
+.reset-button {
+  color: #ffffff;
+  background-color: #32be78;
+  width: 125px;
+  text-align: center;
+  z-index: 2;
+  margin-left: 55px;
+
+}
+
+.footer {
+  position: absolute;
+  bottom: 0px;
+  width: 100%;
+}
+.footer-button {
+  color: #ffffff;
+  background-color: #32be78;
+  width: 280px;
+  text-align: center;
+  z-index: 2;
+  margin-left: -15px;
+
+}

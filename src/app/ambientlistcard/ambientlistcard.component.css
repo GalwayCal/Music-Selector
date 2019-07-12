@@ -1,0 +1,15 @@
+.mat-card{
+    max-width: 90%;
+    margin-bottom: 25px;
+}
+
+.footer-card {
+    margin-left: 10px;
+    padding-top: 3px;
+
+}
+
+.mat-icon {
+    font-size: 25px;
+    color: red;
+}

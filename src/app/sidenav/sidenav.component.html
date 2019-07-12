@@ -1,0 +1,54 @@
+
+<nav class="menu" tabindex="0">
+	<div class="smartphone-menu-trigger"></div>
+  <header class="logo">
+    <img src="https://lh3.googleusercontent.com/8a4MR9Lwm_p0gTQceBN-nLM4Jto9jolPw6qnSlfi29EwcyXKSrqFNaibR2_TMTAAzA" />
+
+  </header>
+
+  <div class="menu-controls">
+  <mat-tab-group>
+        <mat-tab label="Music">
+            <h3>Music Category</h3>
+            <mat-checkbox *ngFor="let category of categories"
+            mat-flat-button
+            class="category-button"
+            (click)="onClick(category)">
+        {{ category }}
+      </mat-checkbox>
+    <!--       <button *ngFor="let category of categories"
+            mat-flat-button
+            class="category-button"
+            (click)="onClick(category)">
+        {{ category }}
+          </button> -->
+          <h3>Intensity Level</h3>
+          <mat-slider
+          thumbLabel
+          [displayWith]="formatLabel"
+          min="1"
+          max="100"></mat-slider>
+          <h3>Familiarity Level</h3>
+          <mat-slider
+          thumbLabel
+          [displayWith]="formatLabel"
+          min="1"
+          max="100"></mat-slider>
+          
+        </mat-tab>
+        <mat-tab label="Ambient">
+            <h3>Ambient Category</h3>
+            <mat-checkbox *ngFor="let category of amvCategories"
+            mat-flat-button
+            class="category-button"
+            (click)="onClick(category)">
+        {{ category }}
+      </mat-checkbox>
+
+
+        </mat-tab>
+      </mat-tab-group>
+      <div class="reset"><button mat-flat-button class="reset-button" >Reset Filters</button></div>
+      <div class="footer"><button mat-flat-button class="footer-button">Login</button></div>
+    </div>
+</nav>

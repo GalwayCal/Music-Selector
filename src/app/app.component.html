@@ -1,0 +1,29 @@
+
+<app-sidenav (filterChanged)="onFilterChange($event)">
+</app-sidenav>
+
+<div class="main">
+  <div class="row">
+    <div class="column" *ngFor="let list of selectedCategories">
+      <app-musiclistcard [list]="list">
+      </app-musiclistcard>
+    </div>
+
+    <div class="column" *ngFor="let list of selectedAmvCategories">
+        <app-ambientlistcard [amvList]="list">
+        </app-ambientlistcard>
+      </div>
+    <!--<div class="column"><app-musiclistcard></app-musiclistcard></div>-->
+    <!--<div class="column"><app-musiclistcard></app-musiclistcard></div>-->
+    <!--<div class="column"><app-musiclistcard></app-musiclistcard></div>-->
+    <!--<div class="column"><app-musiclistcard></app-musiclistcard></div>-->
+    <!--<div class="column"><app-musiclistcard></app-musiclistcard></div>-->
+    <!--<div class="column"><app-musiclistcard></app-musiclistcard></div>-->
+    <!--<div class="column"><app-musiclistcard></app-musiclistcard></div>-->
+    <!--<div class="column"><app-musiclistcard></app-musiclistcard></div>-->
+    <!--<div class="column"><app-musiclistcard></app-musiclistcard></div>-->
+    <!--<div class="column"><app-musiclistcard></app-musiclistcard></div>-->
+    <!--<div class="column"><app-musiclistcard></app-musiclistcard></div>-->
+  </div>
+
+</div>
